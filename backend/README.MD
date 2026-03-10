@@ -77,6 +77,11 @@
 - docker rm api-galatas-pg
 - docker logs api-galatas-pg
 - docker logs api-galatas-pg -f
+- dokcer stop api-galatas-pg
+- docker rm api-galatas-pg
+- docker compose up -d (subir containers)
+- docker compose down (remove containers)
+- docker compose stop (parar containers)
 
 - npx prisma migrate dev
 - npx prisma studio

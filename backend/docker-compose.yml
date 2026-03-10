@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  api-galatas-pg:
+    image: bitnami/postgresql
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRESQL_USERNAME=henrry
+      - POSTGRESQL_PASSWORD=galatas123
+      - POSTGRESQL_DATABASE=apigalatas
