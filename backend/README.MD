@@ -61,9 +61,22 @@
 ## Comandos:
 - pnpm install bcryptjs
 - pnpm install -D @types/bcryptjs
+
 - pnpm i prisma -D
 - npx prisma -h (short handle)
 - npx prisma init (criar arquivos do prisma: banco e tabelas)
 - instalar extensão Prisma
 - npx prisma generate (criar a tipagem - integração do typescript, pra entender que existe as tabelas e os campos)
 - pnpm i @prisma/client
+
+- docker run --name api-galatas-pg -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apigalatas -p 5432:5432 bitnami/postgresql:latest
+- docker ps
+- docker ps -a
+- docker stop api-galatas-pg
+- docker start api-galatas-pg
+- docker rm api-galatas-pg
+- docker logs api-galatas-pg
+- docker logs api-galatas-pg -f
+
+- npx prisma migrate dev
+- npx prisma studio
