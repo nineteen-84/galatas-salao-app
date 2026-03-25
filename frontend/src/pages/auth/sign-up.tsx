@@ -38,12 +38,12 @@ export function SignUp() {
   return (
     <>
       <Helmet title="Register" />
-      <div className="p-8">
-        <div>
-          <img src={logo} alt="Logo da marca com um 'G' grande em destaque, embaixo escrito 'GÁLATAS RZ'S', e novamente embaixo, o nome BARBEARIA" />
+      <div className="flex flex-col gap-8 justify-center items p-8">
+        <div className="flex justify-center">
+          <img className="h-32" src={logo} alt="Logo da marca com um 'G' grande em destaque, embaixo escrito 'GÁLATAS RZ'S', e novamente embaixo, o nome BARBEARIA" />
         </div>
 
-        <form className="flex flex-col gap-12" onSubmit={handleSubmit(handleSignUp)}>
+        <form className="flex flex-col gap-12 w-96" onSubmit={handleSubmit(handleSignUp)}>
 
           <div className="space-y-4">
             <div className="flex gap-2 flex-col">

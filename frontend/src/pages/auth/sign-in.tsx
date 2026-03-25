@@ -48,15 +48,16 @@ export function SignIn() {
       <Dialog>
         <Helmet title="Login" />
 
-        <div className="p-8 flex flex-col gap-8">
+        <div className="p-8 flex flex-col items-center gap-8">
           <div>
             <img
+              className="h-32"
               src={logo}
               alt="Logo da marca com um 'G' grande em destaque, embaixo escrito 'GÁLATAS RZ'S', e novamente embaixo, o nome BARBEARIA"
             />
           </div>
 
-          <form className="flex flex-col gap-12" onSubmit={handleSubmit(handleSignIn)}>
+          <form className="flex flex-col gap-12 w-96" onSubmit={handleSubmit(handleSignIn)}>
             <div className="space-y-4">
               <div className="flex gap-2 flex-col">
                 <Label htmlFor="email" className="text-muted pl-2">Email:</Label>

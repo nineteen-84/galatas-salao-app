@@ -11,7 +11,7 @@ export function Dashboard() {
       <Helmet title="Dashboard" />
       <div className="p-8">
         <div className="flex flex-col gap-2 text-center items-center mb-12">
-          <img src={logo} className="h-65 w-65" />
+          <img src={logo} className="h-52 w-96" />
           <Label className="text-2xl font-semibold text-accent mt-4">
             Em construção!
           </Label>

@@ -4,7 +4,7 @@
 - [x] Deve ser possível se cadastrar;
 - [x] Deve ser possível se autenticar;
 - [] Deve ser possível trocar a senha (recuperação de conta);
-- [] Deve ser possível excluir a própria conta;
+- [x] Deve ser possível excluir a própria conta;
 - [] Deve ser possível obter o perfil de um usuário logado;
 
 - [] Deve ser possível visualizar preços dos serviços;
