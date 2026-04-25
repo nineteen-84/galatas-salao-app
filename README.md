@@ -1,6 +1,7 @@
 
 # Gálatas Salão App
-- Software para gerenciamento de uma barbearia, com funcionalidades de pagamento por corte e agendamento de acordo com a disponibilidade do funcionário, ou seja, o cabeleireiro.
+![alt text](logo.png)
+- Software de gestão para barbearia, focado em automatizar a rotina do estabelecimento. O sistema oferece uma plataforma integrada onde é possível realizar o controle de pagamentos por serviço e gerenciar agendamentos de forma dinâmica, sincronizando os horários com a disponibilidade individual de cada profissional da equipe.
 
 > 🚧 **Status:** Em desenvolvimento
 
@@ -10,7 +11,7 @@
 
 ## Stack Ferramental
 - **Backend:** Node.js (Fastify), PrismaORM v7, PostgreSQL, Docker, Zod, tsup, tsx.
-- **Frontend:** React.js.
+- **Frontend:** React.js 19, radix-ui, tailwindcss, lucide-react, react-helmet-async, react-hook-form, react router, sonner, zod.
 - **Tooling:** TypeScript, ESLint, Prettier.
 
 ## Documentação de Negócio
@@ -123,6 +124,12 @@
 [responsável pelo hash da senha do usuário que está se cadastrando]
 
 ### Frontend
+- npm install
+[realiza a instalação dos pacotes necessários para inicializar a aplicação]
+
+- npm run dev
+[inicializa a aplicação localhost com porta padrão]
+
 - pnpm add tailwindcss @tailwindcss/vite
 [instalação do tailwindcss no projeto, sendo necessário realizar modificações em vite.config.ts para aceitar "@" como raiz]
 

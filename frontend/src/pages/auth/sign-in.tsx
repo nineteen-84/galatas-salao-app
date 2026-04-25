@@ -62,7 +62,7 @@ export function SignIn() {
               <div className="flex gap-2 flex-col">
                 <Label htmlFor="email" className="text-muted pl-2">Email:</Label>
                 <Input
-                  className="border-border border-t-0 border-r-0 border-l-0 text-accent"
+                  className="border-border border-t-0 border-r-0 border-l-0 text-accent focus:text-yellow-400"
                   id="email"
                   type="email"
                   {...register('email')}
@@ -72,7 +72,7 @@ export function SignIn() {
               <div className="flex gap-2 flex-col">
                 <Label htmlFor="password" className="text-muted pl-2">Senha:</Label>
                 <Input
-                  className="border-border border-t-0 border-r-0 border-l-0 text-accent"
+                  className="border-border border-t-0 border-r-0 border-l-0 text-accent focus:text-yellow-400"
                   id="password"
                   type="password"
                   {...register('password')}

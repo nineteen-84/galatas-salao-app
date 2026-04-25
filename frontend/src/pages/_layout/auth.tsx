@@ -13,7 +13,7 @@ export function AuthLayout() {
           style={{ backgroundImage: `url(${imgHairBackground})` }}
         />
 
-        <div className="relative z-10 flex flex-col justify-between h-full">
+        <div className="relative z-10 flex flex-col justify-between h-full border-r-amber-50">
           <div className="text-ls text-foreground flex items-center gap-3 font-medium">
             <Landmark className="h-5 w-5 text-accent-foreground" />
             <span className="font-semibold text-accent-foreground">Galatas</span>

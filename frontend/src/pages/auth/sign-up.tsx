@@ -49,7 +49,7 @@ export function SignUp() {
             <div className="flex gap-2 flex-col">
               <Label htmlFor="name" className="text-muted pl-2">Nome Completo:</Label>
               <Input
-                className="border-[#E2C064] border-t-0 border-r-0 border-l-0 text-accent-foreground"
+                className="border-[#E2C064] border-t-0 border-r-0 border-l-0 text-accent-foreground focus:text-yellow-400"
                 id="name"
                 type="text"
                 {...register('name')}
@@ -59,7 +59,7 @@ export function SignUp() {
             <div className="flex gap-2 flex-col">
               <Label htmlFor="email" className="text-muted pl-2">Email:</Label>
               <Input
-                className="border-[#E2C064] border-t-0 border-r-0 border-l-0 text-accent-foreground"
+                className="border-[#E2C064] border-t-0 border-r-0 border-l-0 text-accent-foreground focus:text-yellow-400"
                 id="email"
                 type="email"
                 {...register('email')}
@@ -70,7 +70,7 @@ export function SignUp() {
               <div className="flex gap-2 flex-col col-span-1">
                 <Label htmlFor="tel" className="text-muted pl-2">Telefone:</Label>
                 <Input
-                  className="border-[#E2C064]  border-t-0 border-r-0 border-l-0 text-accent-foreground"
+                  className="border-[#E2C064]  border-t-0 border-r-0 border-l-0 text-accent-foreground focus:text-yellow-400"
                   id="tel"
                   type="tel"
                   {...register('phone')}
@@ -80,7 +80,7 @@ export function SignUp() {
               <div className="flex gap-2 flex-col col-span-1">
                 <Label htmlFor="CPF" className="text-muted pl-2">CPF:</Label>
                 <Input
-                  className="border-[#E2C064] border-t-0 border-r-0 border-l-0 text-accent-foreground"
+                  className="border-[#E2C064] border-t-0 border-r-0 border-l-0 text-accent-foreground focus:text-yellow-400"
                   id="CPF"
                   type="number"
                   {...register('CPF')}
@@ -91,7 +91,7 @@ export function SignUp() {
             <div className="flex gap-2 flex-col">
               <Label htmlFor="password" className="text-muted pl-2">Senha:</Label>
               <Input
-                className="border-[#E2C064] border-t-0 border-r-0 border-l-0 text-accent-foreground"
+                className="border-[#E2C064] border-t-0 border-r-0 border-l-0 text-accent-foreground focus:text-yellow-400"
                 id="password"
                 type="password"
                 {...register('password')}
@@ -108,7 +108,7 @@ export function SignUp() {
               Registrar
             </Button>
 
-            <p className="text-accent-foreground px-6 text-center text-sm leading-relaxed w-82">
+            <p className="text-accent-foreground focus:text-yellow-400 px-6 text-center text-sm leading-relaxed w-82">
               Ao continuar, você concorda com nossos{' '}
               <a className="underline underline-offset-4" href="">
                 termos de serviço
