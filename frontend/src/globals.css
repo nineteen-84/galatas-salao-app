@@ -51,8 +51,8 @@
   --foreground: #ffff;
 
   /* Cor de destaque (modo claro: azul escuro) */
-  --primary: #2B2D54;
-  --primary-foreground: #ffffff;
+  --primary: hsl(38 55% 55%);
+  --primary-foreground: hsl(228 40% 10%);
 
   /* Cor de fundo de painéis/caixas */
   --card: #ffffff;
@@ -117,6 +117,47 @@
 
   /* Cor de foco (acessibilidade) nos elementos da barra */
   --sidebar-ring: #2B2D54;
+
+  /* ─── Tokens Home (adicionados) ────────────────────────── */
+
+  /* Paleta dourada */
+  --gold:              hsl(38 55% 55%);
+  --gold-light:        hsl(38 60% 70%);
+  --gold-dark:         hsl(38 50% 40%);
+
+  /* Paleta navy */
+  --navy:              hsl(228 40% 10%);
+  --navy-light:        hsl(228 35% 14%);
+  --navy-lighter:      hsl(228 30% 18%);
+
+  /* Gradientes */
+  --gradient-gold:     linear-gradient(135deg, hsl(38 55% 55%), hsl(38 60% 70%));
+  --gradient-navy:     linear-gradient(180deg, hsl(228 40% 10%), hsl(228 35% 14%));
+
+  /* Sombras */
+  --shadow-gold:       0 4px 20px -4px hsl(38 55% 55% / .3);
+  --shadow-card:       0 8px 32px -8px hsl(0 0% 0% / .4);
+
+  /* Fontes */
+  --font-display:      "Playfair Display", serif;
+  --font-body:         "Inter", sans-serif;
+
+  /* Botões */
+  --btn-primary-text:      hsl(228 40% 10%);
+  --btn-outline-border:    hsl(38 55% 55% / .5);
+  --btn-outline-text:      hsl(38 55% 55%);
+  --btn-outline-hover-bg:  hsl(38 55% 55% / .1);
+
+  /* Texto */
+  --text-heading:      hsl(40 20% 92%);
+  --text-body:         hsl(40 20% 92% / .7);
+  --text-muted:        hsl(228 15% 55%);
+  --text-label:        hsl(38 55% 55%);
+
+  /* Seções */
+  --section-bg:        hsl(228 40% 10%);
+  --section-bg-alt:    hsl(228 35% 14%);
+  --section-bg-card:   hsl(228 30% 18%);
 }
 
 .dark {
@@ -163,5 +204,52 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* ─── Utilitários (adicionados) ─────────────────────────── */
+@layer utilities {
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .bg-gradient-navy {
+    background: var(--gradient-navy);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .btn-primary {
+    background: var(--gradient-gold);
+    color: var(--btn-primary-text);
+    box-shadow: var(--shadow-gold);
+    @apply px-7 py-3.5 rounded-md font-semibold text-sm flex items-center justify-center hover:opacity-90 transition-opacity;
+  }
+
+  .btn-outline {
+    border: 1px solid var(--btn-outline-border);
+    color: var(--btn-outline-text);
+    @apply px-7 py-3.5 rounded-md font-semibold text-sm flex items-center justify-center transition-colors;
+  }
+
+  .btn-outline:hover {
+    background: var(--btn-outline-hover-bg);
   }
 }
