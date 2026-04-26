@@ -11,7 +11,7 @@ export function App() {
   return (
     <HelmetProvider>
       <ThemeProvider storageKey="galatas-theme" defaultTheme='light'>
-        <Helmet titleTemplate='%s | galatas.salão' />
+        <Helmet titleTemplate='%s | galatas.salão' defaultTitle='galatas.salão' />
         <Toaster richColors />
         <RouterProvider router={router} />
       </ThemeProvider>
