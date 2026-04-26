@@ -7,53 +7,80 @@ export function HomeFooter() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div>
-                <span className="font-display text-lg font-bold text-gradient-gold">GÁLATAS RZ'S</span>
-                <span className="block text-[10px] tracking-[0.3em] text-muted-foreground uppercase">Barbearia</span>
+                <span className="font-display text-xl font-bold text-gradient-gold">GÁLATAS RZ'S</span>
+                <span className="block text-xs tracking-[0.3em] text-muted-foreground uppercase font-medium">Barbearia</span>
               </div>
             </div>
 
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-base font-medium text-muted-foreground leading-relaxed">
               Sua barbearia por assinatura. Cuidado contínuo, do jeito certo.
             </p>
 
             <div className="flex gap-3 mt-4">
-              <a href="https://www.instagram.com/galatas_rzs.ofc/" target="_blank" rel="noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">Instagram</a>
-              <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">WhatsApp</a>
+              <a
+                href="https://www.instagram.com/galatas_rzs.ofc/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-solid border-primary/50 text-primary hover:border-primary hover:bg-primary/10 transition-all"
+              >
+                <i className="ph ph-instagram-logo" />
+              </a>
+              <a
+                href="#"
+                className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-solid border-primary/50 text-primary hover:border-primary hover:bg-primary/10 transition-all"
+              >
+                <i className="ph ph-whatsapp-logo" />
+              </a>
             </div>
           </div>
 
           <div>
-            <h4 className="font-display text-sm font-semibold text-primary mb-4">Links</h4>
+            <h4 className="font-display text-base font-bold text-primary mb-4">Links</h4>
             <div className="flex flex-col gap-2">
-              <a href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Home</a>
-              <a href="/agendamento" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Agendamento</a>
-              <a href="/servicos" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Serviços</a>
-              <a href="/planos" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Assinaturas</a>
-              <a href="/contato" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contato</a>
+              <a href="/" className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors">Home</a>
+              <a href="/agendamento" className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors">Agendamento</a>
+              <a href="/servicos" className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors">Serviços</a>
+              <a href="/planos" className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors">Assinaturas</a>
+              <a href="/contato" className="text-base font-medium text-muted-foreground hover:text-foreground transition-colors">Contato</a>
             </div>
           </div>
 
           <div>
-            <h4 className="font-display text-sm font-semibold text-primary mb-4">Contato</h4>
-            <div className="flex flex-col gap-3 text-sm text-muted-foreground">
-              <span>Av. Dona Cesária Camargo de Oliveira Jd Vista Alegre</span>
-              <span>(11) 99999-9999</span>
-              <span>contato@galatas.com</span>
+            <h4 className="font-display text-base font-bold text-primary mb-4">Contato</h4>
+            <div className="flex flex-col gap-3 text-base font-medium text-muted-foreground">
+              <span className="flex items-center gap-2">
+                <i className="ph ph-map-pin text-primary" />
+                Av. Dona Cesária Camargo de Oliveira Jd Vista Alegre
+              </span>
+              <span className="flex items-center gap-2">
+                <i className="ph ph-phone text-primary" />
+                (11) 99999-9999
+              </span>
+              <span className="flex items-center gap-2">
+                <i className="ph ph-envelope text-primary" />
+                contato@galatas.com
+              </span>
             </div>
           </div>
 
           <div>
-            <h4 className="font-display text-sm font-semibold text-primary mb-4">Horário</h4>
+            <h4 className="font-display text-base font-bold text-primary mb-4">Horário</h4>
             <div className="flex flex-col gap-2">
-              <span className="text-sm text-muted-foreground">Segunda a Sexta</span>
-              <span className="text-sm text-foreground font-medium ml-6">09h às 19:30h</span>
-              <span className="text-sm text-muted-foreground ml-6">Sábado: 08h ás 19h</span>
+              <span className="flex items-center gap-2 text-base font-medium text-muted-foreground">
+                <i className="ph ph-clock text-primary" />
+                Segunda a Sexta
+              </span>
+              <span className="text-base text-foreground font-semibold ml-6">09h às 19:30h</span>
+              <span className="flex items-center gap-2 text-base font-medium text-muted-foreground">
+                <i className="ph ph-clock text-primary" />
+                Sábado: 08h às 19h
+              </span>
             </div>
           </div>
 
         </div>
 
-        <div className="border-t-2 border-solid border-border mt-10 pt-6 text-center text-xs text-muted-foreground">
+        <div className="border-t-2 border-solid border-border mt-10 pt-6 text-center text-sm font-medium text-muted-foreground">
           © 2026 Gálatas RZ's Barbearia. Todos os direitos reservados.
         </div>
       </div>
