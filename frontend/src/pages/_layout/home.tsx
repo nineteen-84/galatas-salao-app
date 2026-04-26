@@ -1,5 +1,6 @@
 import { Outlet } from "react-router";
 import { HomeHeader } from "@/components/home/home-header";
+import { HomeFooter } from "@/components/home/home-footer";
 
 export function HomeLayout() {
   return (
@@ -8,6 +9,7 @@ export function HomeLayout() {
       <div className="flex-1">
         <Outlet />
       </div>
+      <HomeFooter />
     </div>
   );
 }
