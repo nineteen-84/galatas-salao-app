@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
-import { HomeHeader } from "@/components/home/home-header";
-import { HomeFooter } from "@/components/home/home-footer";
+import { HomeHeader } from "@/components/app-header";
+import { HomeFooter } from "@/components/app-footer";
 
 export function HomeLayout() {
   return (
