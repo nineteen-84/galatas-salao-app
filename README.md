@@ -1,9 +1,9 @@
 
 # Gálatas Salão App
 ![alt text](logo.png)
-- Software de gestão para barbearia, focado em automatizar a rotina do estabelecimento. O sistema oferece uma plataforma integrada onde é possível realizar o controle de pagamentos por serviço e gerenciar agendamentos de forma dinâmica, sincronizando os horários com a disponibilidade individual de cada profissional da equipe.
+- Plataforma de gestão para barbearias, com agendamento online por profissional, pagamentos integrados e gerenciamento financeiro dos serviços. Inclui suporte a planos de assinatura para oferecer serviços recorrentes aos clientes.
 
-> 🚧 **Status:** Em desenvolvimento
+> 🚧 **Status-v1:** Em desenvolvimento
 
 ## Estrutura do Repositório
 - **BACKEND**: Armazena o código backend da aplicação;
@@ -17,19 +17,39 @@
 ## Documentação de Negócio
 
 ### Requisitos Funcionais (RF)
-*   [ ] O usuário deve poder se cadastrar
-*   [ ] O usuário deve poder se logar
+- [ ] O usuário deve poder se cadastrar
+- [ ] O usuário deve poder se logar
 
 ### Requisitos Não-Funcionais (RNF)
-*   [ ] O banco de dados deve utilizar UUID v7 para performance
-*   [ ] A senha do usuário deve estar em formato hash
+- [ ] O banco de dados deve utilizar UUID v7 para performance
+- [ ] A senha do usuário deve estar em formato hash
 
 ### Regras de Negócio (RN)
-*   [ ] Não deve ser possível...
+- [ ] Não deve ser possível...
 
 ## Fluxograma de Desenvolvimento
 
 ## Estrutura do Banco de Dados
+
+### Entidades
+
+- Users (somente email é obrigatório);
+- UserPasswordReset;
+- Roles (admin, professional, customer);
+- UserRole;
+- Professionals (informações do profissional);
+- Profile (informações do usuário);
+- Services (corte, barba, combo, etc...);
+- ProfessionalServices (quais serviços um profissional faz);
+- ProfessionalSchedules (grade de trabalho: dias/s, horário início e fim - pausa almoço);
+- ProfessionalTimeOff (bloqueio de horário da agenda - disponibilidade)
+- Appointments (customer, profissional, service, time and status with price)
+- AppointmentStatusHistory (log de auditória do status do agendamento)
+- Payments: valor total, método de pagamento (dinheiro, pix, cartão), status e o apontamento;
+- PaymentTransactions (tentativas de cobrança junto do gateway de pagamento);
+- SubscriptionPlans: basic or premium (nome, valor, regras)
+- CustomerSubscriptions (assinatura ativa do cliente)
+- SubscriptionPayments (histórico das cobranças da assinatura)
 
 ## Comandos para Iniciar o Projeto
 
