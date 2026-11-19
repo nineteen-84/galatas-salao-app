@@ -6,13 +6,15 @@
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "start:build": "node build/server.js",
-    "lint": "eslint src --ext .ts --fix"
+    "lint": "eslint src --ext .ts --fix",
+    "seed:user": "tsx prisma/seeds/seed.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.17.1",
   "dependencies": {
+    "@prisma/adapter-pg": "^7.10.1",
     "@prisma/client": "^7.10.1",
     "bcryptjs": "^3.0.3",
     "fastify": "^5.7.1",
@@ -22,6 +24,7 @@
   "devDependencies": {
     "@types/bcryptjs": "^3.0.0",
     "@types/node": "^25.0.10",
+    "dotenv": "^18.0.10",
     "prisma": "^7.10.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
