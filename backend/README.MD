@@ -85,3 +85,5 @@
 
 - npx prisma migrate dev
 - npx prisma studio
+
+- pnpm install --save-dev prisma dotenv
